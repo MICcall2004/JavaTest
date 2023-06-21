@@ -59,7 +59,7 @@ public class upDown {
                 
             } 
             else {
-                System.out.println("GameOver! RandomNumber is " + randomNum + "!");
+                System.out.println("GameOver! RandomNumber is " + randomNum + 1 + "!");
                 Restart();
             }
         }

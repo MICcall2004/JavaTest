@@ -4,22 +4,26 @@ package book;
 
 public class Car {
     // 필드
+    String company = "현대자동차";
     String model;
-    int speed;
+    String color;
+    int maxSpeed;
 
     // 생성자
+    Car() {
+    }
+
     Car(String model) {
+        this(model, "은색", 250);
+    }
+
+    Car(String model, String color) {
+        this(model, color, 250);
+    }
+
+    Car(String model, String color, int maxSpeed) {
         this.model = model;
-    }
-
-    void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    void run() {
-        for (int i = 10; i <= 50; i += 10) {
-            setSpeed(i);
-            System.out.println(this.model + "가 달립니다. (시속:" + this.speed + "km/h)");
-        }
+        this.color = color;
+        this.maxSpeed = maxSpeed;
     }
 }
